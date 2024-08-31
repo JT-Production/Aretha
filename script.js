@@ -40,13 +40,14 @@ const btnNo = document.querySelector(".btn-no");
 const container = document.getElementById("container");
 const imageOne = document.querySelector(".image-1");
 const imageTwo = document.querySelector(".image-2");
-
+const pTag = document.querySelector(".aa")
 
 btnYes.addEventListener("click", (e) => {
   btnNo.classList.add("hide");
   btnYes.classList.add("hide");
   imageOne.classList.add("hide");
   imageTwo.classList.remove("hide");
+  pTag.classList.remove("hide");
 });
 // btnNo.addEventListener("click", (e) => {
 //     top +=20
