@@ -1,0 +1,219 @@
+body{
+    background: url(img/16265731_job523-nunoon-01-a.jpg) no-repeat;
+    /* min-height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* font */
+@font-face {
+    font-family: 'Carry';
+    src: url('fonts/carry-you-font/CarryYouRegular-3z71M.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'letter';
+    src: url('fonts/love-letters-3/Love\ Letters.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'yours';
+    src: url('fonts/love-letters-3/Love\ Letters.ttf') format('truetype');
+  }
+
+
+  .roww {
+    background: url(img/R.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 75px 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    font-family: carry;
+    font-size: 20px;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); */
+    color: black;
+}
+.letter h1 {
+    font-family: carry;
+    font-size: 2.5rem;
+    
+
+}
+.question {
+    margin-top: 50px;
+    color: black;
+}
+.question h2 {
+    font-family: carry;
+    font-size: 2rem;
+}
+.btn-love {
+    background-color: #ff3366;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.btn-love:hover {
+    background-color: #ff6699;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /* body {
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #cffafe, #22d3ee);
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .header-img {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* .container {
+    flex: 1;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+   */
+  /* .image-1,
+  .image-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  
+  .image-1 {
+    width: 175px;
+  }
+  
+  .image-2 {
+    width: 250px;
+  }
+  
+  .btnn {
+    /* position: absolute; */
+    /* top: calc(100% - 5rem); */
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: #f8fafc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btnn:hover {
+    background-color: #e2e8f0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* .btn-yes {
+    left: 50%;
+    transform: translateX(calc(-100% - 1rem));
+    z-index: 1;
+  }
+  
+  .btn-no {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+  } */
+  .video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #fff;
+    background-color: rgba(255, 0, 127, 0.8);
+    border: none;
+    border-radius: 50%;
+    padding: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.video-wrapper:hover .play-button {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 0, 127, 1);
+}
+
+.video-wrapper::before {
+    content: '♥';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: rgba(255, 0, 127, 0.8);
+    z-index: 2;
+}
+
+.video-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 127, 0.2);
+    z-index: 1;}
